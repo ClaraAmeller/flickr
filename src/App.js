@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Gallery from "./Gallery.jsx";
 import { hot } from "react-hot-loader"
 import "./App.css";
 
@@ -7,6 +8,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1> Hello, Flickr! </h1>
+        <Gallery />
       </div>
     );
   }
