@@ -1,18 +1,21 @@
 import React from "react"
+import "./styles/Card.css"
 
 const Image = ({ imgId, src, userId }) =>
-  <div>
+  <div className="pic">
     <a href={`https://www.flickr.com/photos/${userId}/${imgId}`}>
       <img src={src} alt="" />
     </a>
   </div>
 
 const Card = ({ imgId, src, userId, username, caption }) => (
-  <div>
+  <div className="card">
     <Image imgId={imgId} src={src} userId={userId} />
-    <div>
-      <p>{username}</p>
-      <p>{caption}</p>
+    <div className="card-content">
+      <div className="card-text">
+        <h3>{username}</h3>
+        <p>{caption}</p>
+      </div>
     </div>
   </div>
 );

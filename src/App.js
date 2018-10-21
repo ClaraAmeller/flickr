@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Gallery from "./Gallery.jsx";
 import { hot } from "react-hot-loader"
-import "./App.css";
+import "./styles/App.css";
 
 class App extends Component {
   render() {
