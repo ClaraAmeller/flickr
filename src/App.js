@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Gallery from "./Gallery.jsx";
-import { hot } from "react-hot-loader"
+import Gallery from "./components/Gallery.jsx";
+import { hot } from "react-hot-loader";
 import "./styles/App.css";
 
 class App extends Component {

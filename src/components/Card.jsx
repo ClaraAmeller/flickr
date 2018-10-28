@@ -1,5 +1,5 @@
 import React from "react"
-import "./styles/Card.css"
+import "../styles/Card.css"
 
 const Image = ({ imgId, src, userId }) =>
   <div className="pic">
@@ -13,8 +13,8 @@ const Card = ({ imgId, src, userId, username, caption }) => (
     <Image imgId={imgId} src={src} userId={userId} />
     <div className="card-content">
       <div className="card-text">
-        <h3>{username}</h3>
-        <p>{caption}</p>
+        <h3 className="username">{username}</h3>
+        <p className="caption">{caption}</p>
       </div>
     </div>
   </div>
